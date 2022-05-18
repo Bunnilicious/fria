@@ -1,0 +1,106 @@
+.post {
+    margin-top: 30px;
+    padding-bottom: 25px;
+    border: 1px solid #E2E3E3;
+    border-radius: 10px;
+    padding-top: 20px;
+}
+
+.post:first-child {
+    margin-top: 60px;
+}
+
+.post:last-child {
+    box-shadow: none;
+}
+
+.author {
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    align-content: center;
+}
+
+.nameWrapper {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-left: 15px;
+}
+
+.name {
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    height: auto;
+    color: #444444;
+    margin-right: 10px;
+}
+
+.tick {
+    width: 16px;
+}
+
+.postPreview {
+    width: 100%;
+}
+
+.content {
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.heading {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.article {
+    color: #6A716A;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    margin-bottom: 20px;
+}
+
+.utils {
+    display: flex;
+}
+
+.utils>* {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.utils:last-child {
+    margin-right: 0px;
+}
+
+
+.utilsItem {
+    display: flex;
+    align-items: center;
+}
+
+.utilsItemWithText img {
+    margin-right: 10px;
+}
+
+.utilsItem span {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 130%;
+    color: #444;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+}

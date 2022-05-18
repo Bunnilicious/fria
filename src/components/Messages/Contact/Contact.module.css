@@ -1,0 +1,102 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0px 1px 0px #E2E3E3;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    width: calc( 100% - 40px );
+    max-width: 305px;
+    flex-shrink: 0;
+}
+a {
+    text-decoration: none;
+}
+
+.contact::before {
+    display: block;
+    width:1000px;
+    content: '';
+    position: absolute;
+    border-bottom: 1px solid #E2E3E3;
+    top: 0px;
+    left: 0px; 
+    z-index: 10;
+}
+
+.contact:first-child:before {
+    border-bottom: none;
+}
+/* .contact:last-child:before {
+    border-bottom: none;
+} */
+
+.active {
+    position: relative;
+    transition: .2s;
+    box-shadow: inset 3px 0px 0px #45AD6E;
+    background: #F6FBF7;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.personalInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.avatar {
+    margin-right: 15px;
+    width: 50px;
+}
+
+.nameAndNick {}
+
+.name {
+    color: #444444;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 130%;
+}
+
+.nick {
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #6A716A;
+}
+
+.date {
+    font-family: Raleway;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #6A716A;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.lastMessage {
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #6A716A;
+    margin-top: 10px;
+    width: 100%;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+}

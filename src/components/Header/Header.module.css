@@ -1,0 +1,84 @@
+.header {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* grid-template-areas: 
+  'logo search utils' */
+  grid-area: header;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  max-width: 190px;
+  width: 100%;
+  margin-right: 30px;
+}
+
+.logo {
+  width: 110px;
+}
+
+.headerContent {
+
+}
+
+.logo {
+  width: 110px;
+  grid-area: logo;
+}
+
+.search {
+  grid-area: search;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  border: 1px solid #DEDEDE;
+  box-sizing: border-box;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.searchText {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #6A716A;
+}
+
+.searchImg {
+  width: 24px;
+}
+
+.utils {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2px 0px;
+  grid-area: utils;
+  max-width: 180px;
+  width: 100%;
+}
+
+.utilsImage {
+  width: 30px;
+  margin-right: 20px;
+}
+
+.avatar {
+  width: 50px;
+}
+

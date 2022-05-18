@@ -1,0 +1,66 @@
+body {
+  background-color: #FCFFFD;
+  font-family: 'Raleway', sans-serif;
+}
+
+.App {
+  display: grid;
+  grid-template-rows: 50px auto;
+  grid-template-columns: minmax(140px,190px) 10fr;
+  box-sizing: border-box;
+  margin: 40px auto;
+  /* max-width: 1290px; */
+  max-width: 1370px;
+  padding: 0 40px;
+  grid-gap: 30px;
+  grid-template-areas: 
+  'header header '
+  /* 'navigation content content content content side'; */
+  'navigation content ';
+  font-family: Raleway;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  box-sizing: border-box;
+  min-height: calc( 100vh - 80px );
+}
+
+.mainContent {
+  grid-area: content;
+  min-width: 10px;
+  width: 100%;
+  /* height: 100%;
+  max-height: calc(100vh - 50px - 30px - 28px - 20px); */
+  max-width: 1070px;
+}
+
+/* ------- empty scrollbar ------- */
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background:none;
+}
+
+
+/* ------- scrollbar ------- */
+/* ::-webkit-scrollbar {
+  width: 17px;
+}
+
+::-webkit-scrollbar-track {
+  background:none;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #D9D9D9;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+  transition: .2s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #B5B2B2;
+  transition: .2s;
+} */
+

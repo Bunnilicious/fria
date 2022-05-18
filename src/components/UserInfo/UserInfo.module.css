@@ -1,0 +1,14 @@
+.content {
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  padding: 20px 30px;
+  background-color: #444;
+  margin-left: -20px;
+  min-width: 10px;
+}
+
+.img {
+  border-radius: 10px;
+}
